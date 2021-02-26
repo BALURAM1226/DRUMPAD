@@ -1,0 +1,99 @@
+<html>
+  
+<audio id="gn">
+  <source src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" />
+</audio>
+
+<audio id="song">
+
+  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/snare.wav" />
+</audio>
+
+<audio id="son">
+  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/ride.wav" />
+</audio>
+<audio id="tomsound">
+  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/tom.wav" />
+</audio>
+<audio id="open">
+  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/openhat.wav" />
+</audio>
+<audio id="kic">
+  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/330437/kick.wav" />
+</audio>
+<audio id="snare">
+  <source src="https://raw.githubusercontent.com/codeBeeMe/React.js-Drum-Machine-App/master/soundPresets/MinimalDrumsArena/Snare2.mp3" />
+</audio>
+ 
+  
+<h1>Drum pad</h1>
+<div class="container">
+
+  <button onclick="clap()">Clap</button>
+  <button onclick="drum()">Drum</button>
+  <button onclick="ride()">Ride</button>
+  <button onclick="tom()">Tom</button>
+  <button onclick="openhat()">Openhat</button>
+  <button onclick="kick()">Kick</button>
+  <button onclick="snare()">Snare2</button>
+  <button >Long Crash1</button>
+  <button>High Tom2</button>
+  <button>Ryde Cym1</button>
+  <button>Bass Drum</button>
+  <button>Side stick</button>
+</div>
+  <div class="footer">
+    <p>©copyright by Baluram Kumavat</p>
+    </div>
+<script>
+  var audio = document.getElementById("song");
+
+  function clap() {
+    audio.load();
+    audio.play();
+  }
+</script>
+<script>
+  function drum() {
+    var drums = document.getElementById("gn");
+    drums.load();
+    drums.play();
+  }
+</script>
+<script>
+  function ride() {
+    var rid = document.getElementById("son");
+    rid.load();
+    rid.play();
+  }
+</script>
+<script>
+  function tom() {
+    var toms = document.getElementById("tomsound");
+    toms.load();
+    toms.play();
+  }
+</script>
+<script>
+  function openhat() {
+    var opn = document.getElementById("open");
+    opn.load();
+    opn.play();
+  }
+</script>
+<script>
+  function kick() {
+    var kic = document.getElementById("kic");
+    kic.load();
+    kic.play();
+  }
+</script>
+<script>
+  function snare() {
+    var sna = document.getElementById("snare");
+    sna.load();
+    sna.play();
+  }
+</script>
+
+</html>
